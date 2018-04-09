@@ -28,6 +28,6 @@ const monologueLines = [
   'I am the one who knocks!'
 ];
 
-const wordCountMap = monologueLines.reduce(function(x, y) {
+const wordCountMap = monologueLines.reduce(function(newObj, line) {
   
 }, {});
