@@ -30,4 +30,8 @@ const monologueLines = [
 
 const wordCountMap = monologueLines.reduce(function(newObj, mono) {
   let line = mono.split(' ').length;
+  if (!newObj[line]) {
+    newObj[line] = 0
+  }
+  
 }, {});
