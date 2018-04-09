@@ -1,10 +1,12 @@
 const batteryBatches = [4, 5, 3, 4, 4, 6, 5];
 
-function reducer(x, y) {
-  return x + y;
-}
+// function reducer(x, y) {
+//   return x + y;
+// }
 
-const totalBatteries = batteryBatches.reduce(reducer);
+const totalBatteries = batteryBatches.reduce(function(x, y) {
+  return x + y;
+});
 
 
 /////////////
